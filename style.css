@@ -59,6 +59,8 @@ border-radius: 5px;
 /* width: 870px; */
 }
 #title{
+  margin-top: 50px;
+  margin-bottom: 50px;
 font-weight: 600;
 font-size: 24px;
 line-height: 36px;
@@ -101,6 +103,10 @@ border: 1px solid #aaa6a6;
 display: flex;
 align-items: center;
 }
+.clubs-body{
+padding-left: 10px;
+margin-left: 10px;
+}
 .top-club-body img {
  width: 177px;
 height: 117px;
@@ -116,10 +122,9 @@ left: 299px;
 top: 900px;
 }
 .final-container{
-width: 870px;
-height: 500px;
-left: 285px;
-top: 500px;
+/* width: 870px; */
+/* top: 500px; */
+width: 1100px;
 margin-top: 20px;
 padding: 43px;
 background: #FFFFFF;
@@ -135,10 +140,6 @@ color: #562EFF;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 70px;
-width: 224px;
-height: 104px;
-left: 324px;
-top: 913px;
 }
 .laliga-club{
 display: flex;
@@ -147,7 +148,63 @@ display: flex;
 display: flex;
 align-items: center;
 }
-.icon p{
-padding-left: 5px;
-margin-left: 5px;
+.para {
+text-align: center;
+padding: 5px 5px;
+}
+
+@media only screen and (max-width:688px) {
+  .container{
+  width: 100%;
+  }
+  .final-container{
+  width: 100%;
+  }
+  .top-player{
+   grid-template-columns: repeat(1,1fr);
+  }
+  .top-player-body, .top-club-body, .laliga-club, .clubs{
+  flex-direction: column;
+  align-items: center;
+  }
+.clubs-body{
+align-items: center;
+}
+  .top-club{
+  grid-template-columns: repeat(1, 1fr);
+  }
+  .top-clubs-laliga{
+  grid-template-columns: repeat(1,1fr);
+  }
+  .icon{
+  flex-direction: column;}
+}
+
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+  .container{
+  width: 100%;
+  }
+  .final-container{
+  width: 100%;
+  }
+  .top-player{
+   grid-template-columns: repeat(2,1fr);
+  }
+  .top-player-body, .top-club-body, .laliga-club, .clubs{
+  flex-direction: column;
+  align-items: center;
+  }
+.clubs-body{
+align-items: center;
+}
+  .top-club{
+  grid-template-columns: repeat(2, 1fr);
+  }
+  .top-clubs-laliga{
+  grid-template-columns: repeat(2,1fr);
+  }
+    .icon{
+  flex-direction: column;}
+}
 }
